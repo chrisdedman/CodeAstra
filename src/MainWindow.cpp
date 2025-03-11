@@ -81,7 +81,9 @@ QAction *MainWindow::createAction(const QIcon &icon, const QString &text, const 
 
 void MainWindow::newFile()
 {
-    // TO-DO: Implement new file function
+    // Added functionality to create a new file
+    MainWindow *newWindow = new MainWindow();
+    newWindow->show();
 }
 
 void MainWindow::showAbout()
